@@ -1,6 +1,6 @@
 ---
-title: 'Pixel Perfect Websites | Code Stitch Web Designs | Denver, CO'
-description: 'Meta description for the page'
+title: "Jack's Bargain Barn | Discount Household Goods & Signs | Hinton, WV"
+description: 'Compact store in Hinton, WV selling an assortment of items, from household goods to signs, at low prices. Located in Save A Lot. Open 7 days a week, 10AM-7PM.'
 preloadImg: '/assets/images/landing.jpg'
 permalink: '/'
 tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
@@ -14,24 +14,6 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css"/>
     <link rel="stylesheet" href="/assets/css/critical.css"/>
-
-    <!-- Script for Netlify Identity -->
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script defer>
-        if (window.netlifyIdentity) {
-            window
-                .netlifyIdentity
-                .on('init', (user) => {
-                    if (!user) {
-                        window
-                            .netlifyIdentity
-                            .on('login', () => {
-                                document.location.href = '/admin/';
-                            });
-                    }
-                });
-        }
-    </script>
 
     <!-- JSON Schema Markup -->
     <script type="application/ld+json">
@@ -81,22 +63,22 @@ eleventyNavigation:
     <section id="hero">
         <div class="cs-container">
             <div class="cs-flex-group">
-                <span class="cs-topper">mountain hiking society</span>
-                <h1 class="cs-title">Explore the World with Exciting People</h1>
+                <span class="cs-topper">Located in Save A Lot</span>
+                <h1 class="cs-title">Quality Household Goods at Bargain Prices</h1>
                 <p class="cs-text">
-                    Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
+                    Your one-stop shop in Hinton, WV for household goods, signs, and more at unbeatable prices. Open 7 days a week!
                 </p>
-                <a href="/about" class="cs-button-solid">Explore More</a>
-                <a href="/contact" class="cs-button-transparent">
+                <a href="#services" class="cs-button-solid">Our Products</a>
+                <a href="#contact" class="cs-button-transparent">
                     <img
                     class="cs-img"
                     loading="lazy"
                     decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-                    alt="play icon"
+                    src="/assets/svgs/phone.svg"
+                    alt="phone icon"
                     width="17"
                     height="17"/>
-                    Get in Touch
+                    Contact Us
                 </a>
             </div>
         </div>
@@ -105,7 +87,7 @@ eleventyNavigation:
         <picture class="cs-picture">
             <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
             <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
+            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="store interior" width="2500" height="1667" loading="eager">
         </picture>
     </section>
 
@@ -114,45 +96,44 @@ eleventyNavigation:
     <!-- ============================================ -->
 
     <section id="services" class="services">
-        <!-- Get Icons From flaticon.com -->
         <div class="card">
             <picture>
                 <img
                 aria-hidden="true"
                 decoding="async"
-                src="/assets/svgs/service1.svg"
-                alt="appliance"
+                src="/assets/svgs/household.svg"
+                alt="household goods icon"
                 width="48"
                 height="48"/>
             </picture>
-            <h2>Service 1</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
+            <h2>Household Goods</h2>
+            <p>Wide selection of quality household items and home essentials at unbeatable bargain prices.</p>
         </div>
         <div class="card">
             <picture>
                 <img
                 aria-hidden="true"
                 decoding="async"
-                src="/assets/svgs/service2.svg"
-                alt="appliance"
+                src="/assets/svgs/signs.svg"
+                alt="signs icon"
                 width="48"
                 height="48"/>
             </picture>
-            <h2>Service 2</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
+            <h2>Signs & Decor</h2>
+            <p>Unique signs and home decor items to add personality to your space at affordable prices.</p>
         </div>
         <div class="card">
             <picture>
                 <img
                 aria-hidden="true"
                 decoding="async"
-                src="/assets/svgs/service3.svg"
-                alt="appliance"
+                src="/assets/svgs/gift.svg"
+                alt="gift icon"
                 width="48"
                 height="48"/>
             </picture>
-            <h2>Service 3</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
+            <h2>Gifts & Accessories</h2>
+            <p>Find the perfect gift or accessory from our ever-changing selection of unique items.</p>
         </div>
     </section>
 
@@ -165,149 +146,78 @@ eleventyNavigation:
             <!-- Left Image Section -->
             <div class="cs-left">
                 <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                    <source media="(max-width: 600px)" srcset="/assets/images/store-interior-m.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/store-interior.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/store-interior.jpg" alt="store interior" loading="lazy" width="400" height="563">
                 </picture>
                 <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
+                    <source media="(max-width: 600px)" srcset="/assets/images/store-products-m.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/store-products.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/store-products.jpg" alt="store products" loading="lazy" width="400" height="563">
                 </picture>
             </div>
             <!-- Right Content Section-->
             <div class="cs-right">
                 <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
+                <h2 class="cs-title">Your Local Bargain Store</h2>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    Located in Save A Lot in Hinton, WV, Jack's Bargain Barn is your go-to destination for quality household goods, unique signs, and amazing deals. We pride ourselves on offering a little bit of everything you need and a lot of what you didn't know you needed!
                 </p>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    Our compact store is packed with an ever-changing assortment of items at unbeatable prices. From household essentials to unique finds, we're committed to bringing you the best deals in town.
                 </p>
                 <div class="cs-flex-group">
                     <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
+                        "They have a little bit of everything u need and allot of what u didn't know you needed. Wonderful prices on everything. So many hard to find odds and ends."
                     </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
+                    <span class="cs-name">Rebecca B.</span>
+                    <span class="cs-job">Verified Customer</span>
                     <img 
                     class="cs-quote-icon"
                     loading="lazy"
                     decoding="async"
                     src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-                    alt="gavel"
+                    alt="quote"
                     width="136"
                     height="77"/>
                 </div>
-                <a href="/about" class="cs-button-solid">More About Us</a>
             </div>
         </div>
     </section>
 
     <!-- ============================================ -->
-    <!--            Extra Content To Rank             -->
+    <!--            Store Hours & Location            -->
     <!-- ============================================ -->
 
-    <section id="sbs-r">
+    <section id="hours-location">
         <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="560">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="560">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">SEO Ranking</span>
-                <h2 class="cs-title">Talk about a main service keyword</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur, iure nihil ipsam qui atque commodi id voluptatem nesciunt, quis animi fuga cum doloribus! Eaque laboriosam, unde consectetur iure asperiores ullam. Consequuntur debitis a voluptatibus vitae optio autem explicabo quia neque est quas, in placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi laudantium voluptatibus rem libero error minus quia eligendi sapiente eos.
-                </p>
-                <a href="/blog" class="cs-button-solid">Read our Blog</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery">
-        <div class="cs-container">
-            <span class="cs-topper">Our Portfolio</span>
-            <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
-            <div class="cs-image-group">
-                <!-- Row 1-->
-                <div class="cs-row cs-row-1">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port2.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port5-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port5.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port8-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port3.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port6-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port6.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-
+            <div class="cs-content">
+                <span class="cs-topper">Visit Us</span>
+                <h2 class="cs-title">Store Hours & Location</h2>
+                <div class="cs-flex">
+                    <div class="cs-hours">
+                        <h3>Hours of Operation</h3>
+                        <ul>
+                            <li><span>Monday:</span> 10:00 AM - 7:00 PM</li>
+                            <li><span>Tuesday:</span> 10:00 AM - 7:00 PM</li>
+                            <li><span>Wednesday:</span> 10:00 AM - 7:00 PM</li>
+                            <li><span>Thursday:</span> 10:00 AM - 7:00 PM</li>
+                            <li><span>Friday:</span> 10:00 AM - 7:00 PM</li>
+                            <li><span>Saturday:</span> 10:00 AM - 7:00 PM</li>
+                            <li><span>Sunday:</span> 10:00 AM - 7:00 PM</li>
+                        </ul>
+                    </div>
+                    <div class="cs-location">
+                        <h3>Find Us</h3>
+                        <p>206 Main St<br>Hinton, WV 25951</p>
+                        <p class="cs-note">Located inside Save A Lot</p>
+                        <a href="tel:{{ client.phoneForTel }}" class="cs-phone">{{ client.phoneFormatted }}</a>
+                        {% if client.socials.facebook %}
+                        <a href="{{ client.socials.facebook }}" target="_blank" rel="noopener" class="cs-social">Follow us on Facebook</a>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
-            <a href="/projects" class="cs-button-solid">View Full Gallery</a>
         </div>
     </section>
 
@@ -317,10 +227,10 @@ eleventyNavigation:
 
     <section id="reviews">
         <div class="cs-container">
-            <span class="cs-topper">Our Reviews</span>
-            <h2 class="cs-title">Words From Our Customers</h2>
+            <span class="cs-topper">Customer Reviews</span>
+            <h2 class="cs-title">What Our Customers Say</h2>
             <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
+                Don't just take our word for it - see what our customers have to say about their shopping experience at Jack's Bargain Barn.
             </p>
             <ul class="cs-card-group">
                 <!-- Review 1 -->
@@ -330,16 +240,16 @@ eleventyNavigation:
                     aria-hidden="true"
                     loading="lazy"
                     decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
+                    src="/assets/images/profile-placeholder.jpg"
                     alt="profile picture"
                     width="80"
                     height="80"/>
                     <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
+                        They have a little bit of everything u need and allot of what u didn't know you needed. Wonderful prices on everything. So many hard to find odds and ends. Friendly, helpful workers.
                     </p>
                     <span class="cs-reviewer">
-                        Jon Doe
-                        <span class="cs-desc">Homeowner</span>
+                        Rebecca B.
+                        <span class="cs-desc">Verified Customer</span>
                     </span>
                     <img
                     class="cs-item-stars"
@@ -347,27 +257,27 @@ eleventyNavigation:
                     loading="lazy"
                     decoding="async"
                     src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
+                    alt="5 stars"
                     width="96"
                     height="16"/>
                 </li>
-                <!-- Review 2 -->
-                <li class="cs-item">
+                <!-- Google Rating Overview -->
+                <li class="cs-item cs-item-google">
                     <img
                     class="cs-item-img"
                     aria-hidden="true"
                     loading="lazy"
                     decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-                    alt="profile picture"
+                    src="/assets/images/google-logo.png"
+                    alt="Google logo"
                     width="80"
                     height="80"/>
                     <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
+                        Rated 4.6 out of 5 based on 181 Google reviews
                     </p>
                     <span class="cs-reviewer">
-                        Jane Doe
-                        <span class="cs-desc">Homeowner</span>
+                        Google Reviews
+                        <span class="cs-desc">Overall Rating</span>
                     </span>
                     <img
                     class="cs-item-stars"
@@ -375,12 +285,11 @@ eleventyNavigation:
                     loading="lazy"
                     decoding="async"
                     src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
+                    alt="4.6 stars"
                     width="96"
                     height="16"/>
                 </li>
             </ul>
-            <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>
         </div>
     </section>
 
