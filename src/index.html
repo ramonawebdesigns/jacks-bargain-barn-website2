@@ -57,38 +57,62 @@ eleventyNavigation:
 {% block body %}
 
     <!-- ============================================ -->
-    <!--                    Hero                      -->
+    <!--                     Hero                     -->
     <!-- ============================================ -->
 
-    <section id="hero">
+    <section id="hero-1946">
         <div class="cs-container">
-            <div class="cs-flex-group">
-                <span class="cs-topper">Located in Save A Lot</span>
-                <h1 class="cs-title">Quality Household Goods at Bargain Prices</h1>
-                <p class="cs-text">
-                    Your one-stop shop in Hinton, WV for household goods, signs, and more at unbeatable prices. Open 7 days a week!
-                </p>
-                <a href="#services" class="cs-button-solid">Our Products</a>
-                <a href="#contact" class="cs-button-transparent">
-                    <img
-                    class="cs-img"
-                    loading="lazy"
-                    decoding="async"
-                    src="/assets/svgs/phone.svg"
-                    alt="phone icon"
-                    width="17"
-                    height="17"/>
-                    Contact Us
-                </a>
+            <div class="cs-content">
+                <h2 class="cs-title">Jack's Bargain Barn</h2>
+                <div class="cs-flex">
+                    <p class="cs-text">Your one-stop shop for quality items at unbeatable prices. From household essentials to unique finds, we've got something for everyone.</p>
+                    <a href="#contact" class="cs-button-solid">Contact Us</a>
+                </div>
             </div>
+            <picture class="cs-picture">
+                <source media="(min-width: 601px)" srcset="/assets/images/landing.webp">
+                <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
+                <img decoding="async" src="/assets/images/landing.webp" alt="store interior" width="1280" height="510">
+            </picture>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-icon-picture">
+                        <img class="cs-icon" src="/assets/svgs/household.svg" decoding="async" alt="household goods icon" width="40" height="40" aria-hidden="true">
+                    </picture>
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Household Goods</h3>
+                        <p class="cs-item-text">Wide selection of quality household items and home essentials at unbeatable bargain prices.</p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon-picture">
+                        <img class="cs-icon" src="/assets/svgs/signs.svg" decoding="async" alt="signs icon" width="40" height="40" aria-hidden="true">
+                    </picture>
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Signs & Decor</h3>
+                        <p class="cs-item-text">Unique signs and home decor items to add personality to your space at affordable prices.</p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon-picture">
+                        <img class="cs-icon" src="/assets/svgs/gift.svg" decoding="async" alt="gift icon" width="40" height="40" aria-hidden="true">
+                    </picture>
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Gifts & Accessories</h3>
+                        <p class="cs-item-text">Find the perfect gift or accessory from our ever-changing selection of unique items.</p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon-picture">
+                        <img class="cs-icon" src="/assets/svgs/clock.svg" decoding="async" alt="clock icon" width="40" height="40" aria-hidden="true">
+                    </picture>
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Open Daily</h3>
+                        <p class="cs-item-text">Visit us 7 days a week from 10 AM to 7 PM for all your shopping needs.</p>
+                    </div>
+                </li>
+            </ul>
         </div>
-
-        <!-- Background Image -->
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="store interior" width="2500" height="1667" loading="eager">
-        </picture>
     </section>
 
     <!-- ============================================ -->

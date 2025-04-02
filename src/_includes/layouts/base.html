@@ -37,8 +37,13 @@
             <link rel="preload" as="image" href="{{ preloadImg }}"/>
         {% endif %}
 
-        <!-- Sitewide Stylesheets and Scripts -->
-        <link rel="stylesheet" href="/assets/css/root.css">
+        <!-- Site-wide stylesheets -->
+        <link rel="stylesheet" href="/assets/css/root.css"/>
+        <link rel="stylesheet" href="/assets/css/local.css"/>
+        <link rel="stylesheet" href="/assets/css/hero.css"/>
+        <link rel="stylesheet" href="/assets/css/critical.css"/>
+
+        <!-- Sitewide Scripts -->
         <script defer src="/assets/js/nav.js"></script>
 
         {% block head %}{% endblock %}
