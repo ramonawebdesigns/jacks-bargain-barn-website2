@@ -107,23 +107,24 @@
 
         .cs-picture {
             width: 100%;
-            max-width: 80rem;
-            /* 280px - 400px */
-            height: clamp(17.5rem, 40vw, 25rem);
-            /* 16px - 20px */
-            margin-bottom: clamp(1rem, 2vw, 1.25rem);
+            max-width: 750px;
+            height: 0;
+            padding-bottom: 60%; /* This creates a taller aspect ratio */
             display: block;
             position: relative;
+            margin: 0 auto 2rem;
+            border-radius: 1rem;
+            overflow: hidden;
+        }
 
-            img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                border-radius: 2.5rem;
-            }
+        .cs-picture img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center bottom; /* This ensures the bottom of the image (with the sign) is always visible */
         }
 
         .cs-card-group {
