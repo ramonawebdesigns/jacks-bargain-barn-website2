@@ -330,9 +330,9 @@
         display: inline-block;
     }
 
-    /* Mobile Call Button */
-    #cs-navigation .cs-mobile-button {
-        display: inline-flex !important;
+    /* Call Button Base Styles */
+    #cs-navigation .cs-call-button {
+        display: inline-flex;
         align-items: center;
         justify-content: center;
         text-decoration: none;
@@ -345,9 +345,14 @@
         line-height: 1.2em;
     }
 
-    /* Hide desktop button on mobile */
-    #cs-navigation .cs-button-solid {
-        display: none !important;
+    /* Mobile Text Show/Hide */
+    #cs-navigation .cs-mobile-text {
+        display: inline;
+    }
+
+    /* Desktop Text Show/Hide */
+    #cs-navigation .cs-desktop-text {
+        display: none;
     }
 }
 
@@ -357,29 +362,25 @@
         padding: 1rem 2rem;
     }
 
-    /* Hide mobile button, show desktop button */
-    #cs-navigation .cs-mobile-button {
-        display: none !important;
+    #cs-navigation .cs-call-button {
+        padding: 1rem 2rem;
+        font-size: 1.125rem;
+        min-width: 9.375rem;
     }
 
-    #cs-navigation .cs-button-solid {
-        display: inline-flex !important;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        background-color: var(--primary);
-        color: #000;
-        font-weight: bold;
-        font-size: 1.125rem;
-        padding: 1rem 2rem;
-        min-width: 9.375rem;
-        border-radius: 0.25rem;
+    /* Switch text display for desktop */
+    #cs-navigation .cs-mobile-text {
+        display: none;
+    }
+
+    #cs-navigation .cs-desktop-text {
+        display: inline;
     }
 }
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #cs-navigation .cs-button-solid {
+    #cs-navigation .cs-call-button {
         font-size: 1.25rem;
     }
 }
