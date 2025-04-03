@@ -28,11 +28,12 @@
     }
 
     #reviews-354 .cs-card-group {
+        width: 100%;
         padding: 0;
         margin: 0;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: stretch;
         flex-direction: column;
         /* 16px - 20px */
         gap: clamp(1rem, 2.5vw, 1.15rem);
@@ -95,5 +96,10 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: stretch;
+        gap: 2rem;
+    }
+    #reviews-354 .cs-item {
+        width: 50%;
+        margin: 0;
     }
 }
