@@ -150,40 +150,41 @@ eleventyNavigation:
     </section>
 
     <!-- ============================================ -->
-    <!--            Store Hours & Location            -->
+    <!--                Contact Strip                 -->
     <!-- ============================================ -->
 
-    <section id="hours-location">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Visit Us</span>
-                <h2 class="cs-title">Store Hours & Location</h2>
-                <div class="cs-flex">
-                    <div class="cs-hours">
-                        <h3>Hours of Operation</h3>
-                        <ul>
-                            <li><span>Monday:</span> 10:00 AM - 7:00 PM</li>
-                            <li><span>Tuesday:</span> 10:00 AM - 7:00 PM</li>
-                            <li><span>Wednesday:</span> 10:00 AM - 7:00 PM</li>
-                            <li><span>Thursday:</span> 10:00 AM - 7:00 PM</li>
-                            <li><span>Friday:</span> 10:00 AM - 7:00 PM</li>
-                            <li><span>Saturday:</span> 10:00 AM - 7:00 PM</li>
-                            <li><span>Sunday:</span> 10:00 AM - 7:00 PM</li>
-                        </ul>
-                    </div>
-                    <div class="cs-location">
-                        <h3>Find Us</h3>
-                        <p>206 Main St<br>Hinton, WV 25951</p>
-                        <p class="cs-note">Located inside Save A Lot</p>
-                        <a href="tel:{{ client.phoneForTel }}" class="cs-phone">{{ client.phoneFormatted }}</a>
-                        {% if client.socials.facebook %}
-                        <a href="{{ client.socials.facebook }}" target="_blank" rel="noopener" class="cs-social">Follow us on Facebook</a>
-                        {% endif %}
-                    </div>
+    <div id="contact-strip-325">
+        <ul class="cs-stat-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone-gold.svg" alt="icon" width="35" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <div class="cs-flex-group">
+                    <span class="cs-header">Phone</span>
+                    <a href="tel:(681) 207-7347" class="cs-link">(681) 207-7347</a>
                 </div>
-            </div>
-        </div>
-    </section>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-gold.svg" alt="icon" width="40" height="35" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <div class="cs-flex-group">
+                    <span class="cs-header">Address</span>
+                    <a href="https://maps.google.com/?q=206+Main+St,+Hinton,+WV+25951" class="cs-link">206 Main St<br>Hinton, WV 25951<br><span style="font-size: 0.9em;">Located inside Save A Lot</span></a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/clock-gold.svg" alt="icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <div class="cs-flex-group">
+                    <span class="cs-header">Open Hours</span>
+                    <span class="cs-hours">Monday To Sunday</span>
+                    <span class="cs-hours">10:00 AM - 7:00 PM</span>
+                </div>
+            </li>
+        </ul>
+    </div>
 
     <!-- ============================================ -->
     <!--                   Reviews                    -->
