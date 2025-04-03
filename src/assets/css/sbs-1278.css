@@ -229,6 +229,7 @@
     padding: var(--sectionPadding);
     background-color: #F7F7F7;
     position: relative;
+    margin-bottom: 0;
 }
 
 #about .cs-container {
@@ -296,6 +297,7 @@
 @media only screen and (min-width: 0rem) {
     #about {
         padding: var(--sectionPadding);
+        margin-bottom: 0;
     }
 
     #about .cs-container {
@@ -305,6 +307,7 @@
     #about .cs-picture {
         /* height for mobile */
         height: 25rem;
+        margin-bottom: 0;
     }
 }
 

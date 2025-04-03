@@ -3,22 +3,27 @@
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
+#contact {
+    margin-top: 0;
+    padding-top: 0;
+}
+
 #contact-strip-325 {
     padding: var(--sectionPadding);
     background-color: #1a1a1a;
+    position: relative;
+    z-index: 1;
 }
 
 #contact-strip-325 .cs-stat-group {
     width: 100%;
-    /* changes to 1280px at desktop */
-    max-width: 37.5rem;
-    margin: auto;
+    margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 2.5rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 #contact-strip-325 .cs-item {
