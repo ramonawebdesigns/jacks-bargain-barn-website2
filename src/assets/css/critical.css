@@ -298,3 +298,107 @@
     color: #fff;
   }
 }
+
+/* Mobile Navigation */
+@media only screen and (min-width: 0rem) {
+    #cs-navigation {
+        padding: 1rem;
+        background-color: #fff;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10000;
+    }
+
+    #cs-navigation .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #cs-navigation .cs-logo {
+        width: auto;
+        max-width: 200px;
+        height: auto;
+        text-decoration: none;
+    }
+
+    #cs-navigation .cs-button-solid {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        min-width: auto;
+        padding: 0.75rem 1rem;
+        background-color: var(--primary);
+        border-radius: 0.25rem;
+        position: relative;
+        z-index: 1;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+    }
+
+    #cs-navigation .cs-button-solid .cs-desktop-text {
+        display: none;
+    }
+
+    #cs-navigation .cs-button-solid .cs-mobile-text {
+        display: block;
+    }
+
+    #cs-navigation .cs-button-solid:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.25rem;
+        transition: width .3s;
+    }
+
+    #cs-navigation .cs-button-solid:hover:before {
+        width: 100%;
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #cs-navigation {
+        padding: 1rem 2rem;
+    }
+
+    #cs-navigation .cs-button-solid {
+        font-size: 1.125rem;
+        padding: 1rem 2rem;
+        min-width: 9.375rem;
+    }
+
+    #cs-navigation .cs-button-solid .cs-desktop-text {
+        display: block;
+    }
+
+    #cs-navigation .cs-button-solid .cs-mobile-text {
+        display: none;
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #cs-navigation .cs-button-solid {
+        font-size: 1.25rem;
+    }
+}
