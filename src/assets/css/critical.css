@@ -338,22 +338,13 @@
         text-align: center;
         margin: 0;
         color: #fff;
-        min-width: auto;
+        min-width: 5rem;
         padding: 0.75rem 1rem;
         background-color: var(--primary);
         border-radius: 0.25rem;
         position: relative;
         z-index: 1;
-        /* prevents padding from adding to the width */
         box-sizing: border-box;
-    }
-
-    #cs-navigation .cs-button-solid .cs-desktop-text {
-        display: none;
-    }
-
-    #cs-navigation .cs-button-solid .cs-mobile-text {
-        display: block;
     }
 
     #cs-navigation .cs-button-solid:before {
@@ -385,14 +376,6 @@
         font-size: 1.125rem;
         padding: 1rem 2rem;
         min-width: 9.375rem;
-    }
-
-    #cs-navigation .cs-button-solid .cs-desktop-text {
-        display: block;
-    }
-
-    #cs-navigation .cs-button-solid .cs-mobile-text {
-        display: none;
     }
 }
 
