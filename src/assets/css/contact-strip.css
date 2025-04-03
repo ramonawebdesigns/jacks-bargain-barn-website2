@@ -25,10 +25,12 @@
     list-style: none;
     width: 18.125rem;
     margin: 0;
-    padding: 0;
+    padding: 1.5rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    background-color: #f7f7f7;
+    border-radius: 0.5rem;
 }
 
 #contact-strip-325 .cs-item:hover .cs-picture {
@@ -38,8 +40,8 @@
 }
 
 #contact-strip-325 .cs-picture {
-    width: 5rem;
-    height: 5rem;
+    width: 3.5rem;
+    height: 3.5rem;
     /* 12px - 20px */
     margin-right: clamp(0.75rem, 3vw, 1.25rem);
     border: 1px solid var(--primary);
@@ -50,7 +52,7 @@
     transition: background-color 0.3s, box-shadow 0.3s, transform 0.6s;
     /* prevents flexbox from squishing it */
     flex: none;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: #ffffff;
 }
 
 #contact-strip-325 .cs-flex-group {
@@ -61,11 +63,9 @@
 }
 
 #contact-strip-325 .cs-icon {
-    width: 2.0625rem;
-    height: 2.0625rem;
+    width: 1.75rem;
+    height: 1.75rem;
     display: block;
-    /* Ensure icon is centered */
-    margin: auto;
 }
 
 #contact-strip-325 .cs-header {
@@ -74,7 +74,7 @@
     line-height: 1.2em;
     margin: 0;
     margin-bottom: 0.75rem;
-    color: var(--bodyTextColorWhite);
+    color: var(--headerColor);
     display: block;
 }
 
