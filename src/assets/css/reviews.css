@@ -57,8 +57,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: stretch;
     gap: 2rem;
@@ -66,7 +65,7 @@
 
 #reviews-727 .cs-item {
     list-style: none;
-    width: calc(50% - 1rem);
+    width: 100%;
     margin: 0;
     /* 32px - 48px top & bottom */
     /* 16px - 32px left & right */
@@ -129,28 +128,20 @@
     position: relative;
 }
 
-/* Mobile - under 768px */
-@media only screen and (max-width: 47.9375rem) {
-    #reviews-727 .cs-card-group {
-        flex-direction: column;
-    }
-
-    #reviews-727 .cs-item {
-        width: 100%;
-    }
-}
-
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #reviews-727 .cs-container {
         max-width: 80rem;
-    }
-
-    #reviews-727 .cs-content {
         padding: 0 1rem;
     }
 
     #reviews-727 .cs-card-group {
-        padding: 0 1rem;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+
+    #reviews-727 .cs-item {
+        width: calc(50% - 1rem);
     }
 }
