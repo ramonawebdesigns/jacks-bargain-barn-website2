@@ -302,13 +302,13 @@
 /* Mobile Navigation */
 @media only screen and (min-width: 0rem) {
     #cs-navigation {
-        padding: 1rem;
-        background-color: #fff;
-        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
         position: fixed;
         top: 0;
         left: 0;
-        right: 0;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        background-color: #fff;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         z-index: 10000;
     }
 
@@ -319,6 +319,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 1rem;
     }
 
     #cs-navigation .cs-logo {
@@ -326,25 +327,17 @@
         max-width: 200px;
         height: auto;
         text-decoration: none;
+        display: inline-block;
     }
 
     #cs-navigation .cs-button-solid {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        font-size: 1rem;
-        font-weight: 700;
-        text-align: center;
+        display: inline-flex !important;
         margin: 0;
-        color: #fff;
-        min-width: 5rem;
-        padding: 0.75rem 1rem;
-        background-color: var(--primary);
-        border-radius: 0.25rem;
-        position: relative;
-        z-index: 1;
-        box-sizing: border-box;
+        height: auto;
+        min-width: 4rem;
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+        line-height: 1.2em;
     }
 
     #cs-navigation .cs-button-solid:before {

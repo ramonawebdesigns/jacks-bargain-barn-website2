@@ -54,14 +54,17 @@
   .cs-button-solid {
     z-index: 1;
     position: relative;
-    display: inline-block;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
     background-color: var(--primary);
     width: auto;
-    padding: 0 1.875rem;
+    min-width: 4rem;
+    padding: 0.75rem 1.5rem;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1rem;
-    line-height: 3.125em;
+    font-size: 0.9rem;
+    line-height: 1.2em;
     font-weight: bold;
     color: #000;
     transition: color 0.3s;
