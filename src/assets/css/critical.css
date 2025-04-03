@@ -364,9 +364,16 @@
 
     #cs-navigation .cs-button-solid {
         display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        background-color: var(--primary);
+        color: #000;
+        font-weight: bold;
         font-size: 1.125rem;
         padding: 1rem 2rem;
         min-width: 9.375rem;
+        border-radius: 0.25rem;
     }
 }
 
