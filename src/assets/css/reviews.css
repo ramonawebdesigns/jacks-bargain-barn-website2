@@ -7,7 +7,6 @@
     #reviews-354 {
         padding: var(--sectionPadding);
     }
-
     #reviews-354 .cs-container {
         width: 100%;
         max-width: 80rem;
@@ -17,83 +16,72 @@
         align-items: center;
         /* 48px - 64px */
         gap: clamp(3rem, 6vw, 4rem);
-        padding: 0 1rem;
     }
-
     #reviews-354 .cs-content {
         /* set text align to left if content needs to be left aligned */
         text-align: center;
         width: 100%;
-        max-width: 40rem;
-        margin: auto;
         display: flex;
         flex-direction: column;
         /* centers content horizontally, set to flex-start to left align */
         align-items: center;
     }
 
-    #reviews-354 .cs-title {
-        max-width: 20ch;
-        margin: 0 auto 1rem;
-    }
-
-    #reviews-354 .cs-text {
-        max-width: 40rem;
-        margin: 0 auto;
-    }
-
     #reviews-354 .cs-card-group {
-        width: 100%;
         padding: 0;
         margin: 0;
         display: flex;
         justify-content: center;
-        align-items: stretch;
+        align-items: center;
         flex-direction: column;
-        gap: 2rem;
+        /* 16px - 20px */
+        gap: clamp(1rem, 2.5vw, 1.15rem);
     }
-
     #reviews-354 .cs-item {
         list-style: none;
         width: 100%;
-        margin: 0;
-        padding: 2rem;
+        max-width: 39.375rem;
+        /* 24px - 32px top & bottom */
+        /* 16px - 40px left & right */
+        padding: clamp(1.5rem, 3.15vw, 2rem) clamp(1rem, 3.15vw, 2.5rem);
         background-color: #f7f7f7;
         border-radius: 1rem;
+        /* prevents padding from adding to height and width */
         box-sizing: border-box;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: flex-start;
+        flex-direction: column;
         position: relative;
     }
-
     #reviews-354 .cs-quote {
-        width: 40px;
-        height: 33px;
+        width: 2.5rem;
+        height: auto;
         margin-bottom: 2rem;
         display: block;
-        object-fit: contain;
     }
-
     #reviews-354 .cs-review {
+        /* 14px - 20px */
         font-size: clamp(0.875rem, 2vw, 1.25rem);
         line-height: 1.5em;
         margin: 0;
-        margin-bottom: 2rem;
+        /* 20px - 40px */
+        margin-bottom: clamp(1.25rem, 3vw, 2.5rem);
         color: var(--bodyTextColor);
     }
-
     #reviews-354 .cs-name {
+        /* 20px - 25px */
         font-size: clamp(1.25rem, 3vw, 1.5625rem);
         line-height: 1.2em;
         font-weight: 700;
         margin: 0;
+        /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
         margin-top: auto;
         color: var(--headerColor);
         display: block;
     }
-
     #reviews-354 .cs-job {
+        /* 14px - 16px */
         font-size: clamp(0.875rem, 1.6vw, 1rem);
         line-height: 1.5em;
         margin: 0;
@@ -101,16 +89,11 @@
         display: block;
     }
 }
-
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #reviews-354 .cs-card-group {
         flex-direction: row;
         justify-content: space-between;
         align-items: stretch;
-    }
-
-    #reviews-354 .cs-item {
-        width: calc(50% - 1rem);
     }
 }
