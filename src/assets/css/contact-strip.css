@@ -74,7 +74,7 @@
     line-height: 1.2em;
     margin: 0;
     margin-bottom: 0.75rem;
-    color: var(--headerColor);
+    color: var(--bodyTextColorWhite);
     display: block;
 }
 
